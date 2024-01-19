@@ -3,6 +3,7 @@ def caesar_cipher(word,increment)
 	letters_array = word.chars.map do |char|
 		character = char;
 		is_upcase = character == character.upcase
+		# 0 are special characters like spaces ?!.,
 		if(char.to_i(base) != 0)
 			#convert character in word to base36 number
 			number = char.to_i(base);
