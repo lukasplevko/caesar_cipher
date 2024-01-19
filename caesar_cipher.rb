@@ -1,4 +1,5 @@
 def caesar_cipher(word,increment)
+	#found out about converting string to number and vice versa in rubydocs
 	base = 36
 	letters_array = word.chars.map do |char|
 		character = char;
